@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ 
+ <div class="fullbody"></div>
+  <div class="container ">
+    <header class="header">
+        <nav class="navigation">
+          <!-- Mobile -->
+          <div class="hambergurMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <!--End Mobile -->
+          <div class="logo"></div>
+          <ul class="navigatinMenu responsiveMenu">
+            <span class="close"></span>
+            <li class="navigationMenuItem"><a> Collections </a></li>
+            <li class="navigationMenuItem"><a>Men </a></li>
+            <li class="navigationMenuItem"><a> Women</a></li>
+            <li class="navigationMenuItem"><a> About</a></li>
+            <li class="navigationMenuItem"><a>   Contact
+            </a></li>
+          </ul>
+        </nav>
+        
+        <nav class="nav">
+          <div class="logoCart">
+            <div class="logoCartImage"></div>
+            <span class="buyNumber">0</span>
+          </div>
+          
+          <div class="profileImage"></div>
+        </nav>
+    </header>
+    <hr/>
+      <div class="message">
+        <div><h3>Cart</h3></div>
+        <hr>
+        <!-- when cart Empty -->
+        <div class="text">
+          <p class="textMessage">
+          Your cart is empty
+        </p>
+      </div>
+      <!-- when cart Full -->
+      <div  class="buyInformationContainer">
+          <div class="buyInfoItems">
+            <div class="imageReview"></div>
+            <div class="buyInfo">
+              <p class="fall">Fall Limited Edition Sneakers</p>
+              <div > 
+                <span class="priceReview"></span>
+                <span class="Numbers"></span>
+                <span class="total"></span>
+              </div>
+            </div>
+            <div class="trashIcon"></div>
+          </div>
+          <button class="checkout">checkout</button>
+        </div>
+      </div>
+    
+   
+    <!-- main -->
+    <main class="showProductContainer">
+      <div class="showProduct">
+        <section class="imageProduct">
+          <div class="imageProductLarg">
+            <div class="largImage">
+              <img src="./images/image-product-1.jpg" class="image" alt="product" />
+            </div>
+          </div>
+          <!-- responsive -->
+          <div class=" Reponsive">
+            <span class=" responsiveRight"></span>
+            <span class=" responsiveLeft"></span>
+            <div class="largImage">
+              <img src="./images/image-product-1.jpg" class="image imageResponsive" alt="product" />
+            </div>
+          </div>
+          <div class="imageProductSmall">
+            <div class="smallImage item1">
+              <img src="./images/image-product-1-thumbnail.jpg " alt="productthumbnail"/>
+            </div>
+            <div class="smallImage item2">
+              <img src="./images/image-product-2-thumbnail.jpg" alt="productthumbnail"/>
+            </div>
+            <div class="smallImage item3">
+              <img src="./images/image-product-3-thumbnail.jpg" alt="productthumbnail"/>
+            </div>
+            <div class="smallImage item4">
+              <img src="./images/image-product-4-thumbnail.jpg" alt="productthumbnail"/>
+            </div>
+          </div>
+          
+        </section>
+        <section class="descriptionProduct">
+         <h5 class="titleCompany"> Sneaker Company</h5>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          <section class="PriceContianer">
+            <div class="price">
+              <h2 class="priceProduct"> <span>$</span>125.00</h2>
+              <h3 class="discount">50%</h3>
+            </div>
+            <div>
+              <div class="finalPrice"><h4 >$250.00</h4></div>
+              
+            </div>
+          </section>
+          <!-- <section class="addToCartContainers" > -->
+              <div  class="addToCartContainer">  
+                <div class="buyCount"  >
+                  <span class="miness"></span>
+                  <div>
+                    <p class="number">0</p>
+                  </div>
+                  <span class="plus"></span>
+                </div>
+                <button class="addToCart">Add to cart</button>
+              </div>
+            <!-- </section> -->
+        </section>
+      </div>
+     
+    </main>
+    <!-- modal -->
+    
+    <div class="modalContainer">
+      <div class="iconClose"></div>
+      <span class="arrowRight"></span>
+      <span class="arrowLeft"></span>
+      <section class="imageProduct modal">
+        <div class="imageProductLarg">
+          <div class="largImage">
+            <img src="./images/image-product-1.jpg" class="image imageModal" alt="product" />
+          </div>
+        </div>
+        <div class="imageProductSmall modal">
+          <div class="smallImage item1">
+            <img src="./images/image-product-1-thumbnail.jpg " alt="productthumbnail"/>
+          </div>
+          <div class="smallImage item2">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="productthumbnail"/>
+          </div>
+          <div class="smallImage item3">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="productthumbnail"/>
+          </div>
+          <div class="smallImage item4">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="productthumbnail"/>
+          </div>
+        </div>
+        
+      </section>
+      
+    </div>
+   
+  </div>
+
+ 
+ <script src="./js/main.js"></script>
+</body>
+</html>
