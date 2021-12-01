@@ -9,7 +9,7 @@ const addtocart=document.querySelector(".addToCart")
 const pricereview=document.querySelector(".priceReview")
 const numberbuy=document.querySelector(".Numbers")
 const total=document.querySelector(".total")
-const priceproduct=document.querySelector(".priceProduct")
+const priceproduct=document.querySelector("#priceProduct")
 const buyInfo=document.querySelector(".buyInformationContainer")
 const text=document.querySelector(".text")
 const close =document.querySelector(".iconClose")
@@ -95,7 +95,7 @@ let counter=0;
     addtocart.addEventListener("click", ()=>{
         if(counter>0){
             buynumebr.innerText=number.innerText;
-            buynumebr.classList.toggle("active")
+            buynumebr.classList.add("active")
             text.classList.toggle("active")
             buyInfo.classList.toggle("active")
         } 
@@ -104,12 +104,14 @@ let counter=0;
 // problem
 const calPrice=()=>{
     // give innerText
-    const price=priceproduct.innerText
+    const price=Number(priceproduct.innerText)
+    const countBuy=counter
     // const numbers=number.innerText
     // set InnerText
-         pricereview.innerText=price;
-        const calc=numberbuy.innerHTML=5;
-        total.innerText= price * 5; 
+         pricereview.innerText=price + " " +  "0.0";
+         numberbuy.innerText=countBuy;
+        total.innerText=price*countBuy ; 
+        console.log(number.innerText)
 }
   // carouselImage
   const array=[
@@ -177,5 +179,6 @@ responsiveLeft.addEventListener("click", ()=>{
     prevSlide()
     showPersonResponsive()
 })
+
 
     
